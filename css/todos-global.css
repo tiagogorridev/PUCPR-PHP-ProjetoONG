@@ -1,0 +1,457 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cutive+Mono&family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    overflow-x: hidden;
+}
+
+
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+body {
+    background-color: #FDF3C0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+a {
+    color:#000000;
+}
+
+
+header {
+    font-family: Oswald;
+}
+
+.img-logo {
+    width: 5rem;
+}
+
+.img-user {
+    width: 4rem;
+}
+
+
+.btn-icon-header {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+.nav-links {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60vw;
+    background-color: #FFD864;
+    flex-direction: column;
+    padding: 16px;
+    animation-duration: 0.8s;
+    z-index: 1;
+
+}
+
+.nav-links a {
+    color: #000000;
+}
+
+
+.nav-links.show {
+    display: flex;
+    margin-left: 0;
+}
+
+
+.nav-links li {
+    margin: 10px 0;
+    z-index: 2;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.user {
+    display: none;
+}
+
+.btn-menu {
+    width: 5rem;
+
+
+}
+
+
+.btn-close {
+    width: 1rem;
+}
+
+.btn-login {
+    background-color: #dab547;
+    width: 3rem;
+    height: 1 rem;
+    padding: 0.5rem 1rem;
+    border-style: solid;
+    border-radius: 1rem;
+
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+.footer{
+    margin-top: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 2rem;
+    background: #FFA114;
+    margin-top: 3rem;
+
+}
+
+
+.img-footer {
+    width: 5rem;
+}
+
+.social-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.icon-footer {
+    width: 1.5rem;
+    margin-right: 1rem;
+}
+
+.boneco-footer {
+    width: 5rem;
+    margin-top: 1rem;
+}
+
+
+.img-footer-end{
+   display: flex;
+   justify-content: center;
+}
+
+.img-footer-start{
+    display: none;
+}
+
+*, header, footer, body, .container {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+@media only screen and (min-width: 768px){
+    .footer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;   
+    }
+
+    .socias{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .img-footer-start{
+        display: block;
+    }
+    .img-footer-end{
+        display: none;
+    }
+
+    .boneco-footer{
+        width: 6rem;
+    }
+}
+
+
+
+
+
+
+
+@keyframes showSideBar {
+    from {
+        margin-left: -100vw;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    header {
+        margin: 1rem 0.5rem;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .nav-links ul {
+        color: #FFA114;
+        display: flex;
+        margin: 0 1rem; 
+        font-size: 1.5rem;
+    }
+
+
+    .nav-links {
+        position: inherit;
+        display: flex;
+        align-items: center;
+        height: auto;
+        background-color: #FDF3C0;
+    }
+
+    .nav-link a{
+        padding: 0 1rem;
+        color: #FFA114;
+    }
+
+    .user{
+        display: flex;
+    }
+
+    .btn-icon-header {
+        display: none;
+    }
+
+    .btn-login{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 577px){
+
+}
+
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/assets/fonts/Oswald/static/Oswald-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/assets/fonts/Oswald/static/Oswald-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/assets/fonts/Oswald/static/Oswald-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/assets/fonts/Oswald/static/Oswald-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/assets/fonts/Oswald/static/Oswald-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/assets/fonts/Oswald/static/Oswald-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lilita One';
+    src: url('/assets/fonts/Lilita_One/LilitaOne-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 75%;
+    }
+}
+

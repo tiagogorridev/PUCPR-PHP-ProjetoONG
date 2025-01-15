@@ -1,0 +1,226 @@
+main {
+    margin-top: 3rem;
+}
+
+
+.title{
+    text-align: center;
+    text-align: center;
+    font-size: 2rem;
+    color: #FFA114;
+    margin-bottom: 20px;
+}
+
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 24px;
+}
+
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+
+.filters label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.filters input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+.filters button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: fit-content;
+    align-self: flex-end;
+    margin-bottom: 2px;
+}
+
+.filters button:hover {
+    background-color: #0056b3;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 600px;
+}
+
+.relatorio {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5rem;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e0f7fa;
+}
+
+
+td:nth-child(4),
+td:nth-child(5) {
+    text-align: right;
+}
+
+
+td:nth-child(6) {
+    font-style: italic;
+}
+
+
+p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filtros label {
+    font-weight: bold;
+}
+
+.filtros input[type="date"],
+.filtros input[type="number"] {
+    padding: 8px;
+    width: 180px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.filtros button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filtros button:hover {
+    background-color: #45a049;
+}
+@media (max-width: 768px) {
+    .relatorio {
+        width: 100%;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 8px 10px;
+    }
+
+    td {
+        word-wrap: break-word;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 6px 8px;
+    }
+
+    td {
+        word-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .filters label {
+        margin-left: 0 !important;
+    }
+
+    .filters button {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .filters input[type="date"] {
+        width: 100%;
+    }
+}

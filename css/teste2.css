@@ -1,0 +1,55 @@
+.title{
+    font-size: 2rem;
+    color: #FFA114;
+    margin-bottom: 30px;
+    padding-left: 1rem;
+    text-align: center;
+}  
+    
+
+
+.summary-section {
+    margin:auto;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fafafa;
+    width: 80%;
+}
+
+.summary-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.summary-section p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+form {
+    text-align: center;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+main{
+    margin-top: 3rem;
+    margin-bottom: 13rem;
+}

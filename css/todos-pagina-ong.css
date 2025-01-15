@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.donation-box {
+    width: 100%;
+    max-width: 800px;
+    border: 6px solid #FFA114;
+    border-radius: 60px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F9F9;
+    align-items: center;
+    gap: 30px;
+    margin-top: 25%; 
+}
+.ong-description-box {
+    width: 100%;
+    max-width: 600px;
+    background-color: #FFA114; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    color: #333; 
+    font-size: 1vw;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 20px; 
+}
+
+.ong-description-box p {
+    margin-bottom: 10px;
+}
+
+.ong-name {
+    font-size: 2.5vw;
+    color: #FFA114;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px; 
+}
+
+
+.donation-image {
+    width: 80%;
+    max-width: 500px;
+    height: 250px;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.donation-image img {
+    width: 280px; 
+    height: 280px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+
+
+.note {
+    font-size: 0.8vw;
+    color: black;
+    text-align: center;
+    margin-top: -25px;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px; 
+    justify-content: center; 
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px; 
+}
+
+.confirm-button, .cancel-button {
+    width: 45%; 
+    padding: 15px;
+    border-radius: 30px; 
+    text-align: center;
+    color: white;
+    font-size: 1.1vw;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.confirm-button {
+    background: #4379E3;
+    border: 1px solid #1753CA;
+}
+
+.confirm-button:hover {
+    background: #3a66c2; 
+    transform: translateY(-4px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.confirm-button:active {
+    transform: translateY(2px); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.cancel-button {
+    background: #FFA114;
+    border: 2px solid #FF8C00; 
+}
+
+.cancel-button:hover {
+    background: #FF8C00;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.cancel-button:active {
+    transform: translateY(2px); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .confirm-button, .cancel-button {
+        width: 100%; 
+        font-size: 4vw;
+    }
+}
+
+
+
+
+.donation-input-box {
+    width: 100%;
+    background-color: #F9F9F9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.37);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.input-box {
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    font-size: 1vw;
+    color: black;
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 300; 
+}
+
+#valor {
+    width: 100%;
+    max-width: 410px;
+    padding: 6px;
+    font-size: 0.8vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    font-weight: 300;
+}
+
+select {
+    width: 100%;
+    max-width: 200px;
+    padding: 6px;
+    font-size: 0.8vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    font-weight: 300;
+}
+
+.error-message {
+    background-color: #ffdddd;
+    border: 2px solid #ff5c5c;
+    padding: 15px;
+    border-radius: 8px;
+    color: #a94442;
+    font-size: 1rem;
+    margin: 15px 0;
+    text-align: center;
+}
+
+
+.error-popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%; 
+    text-align: center;
+    position: relative;
+    max-height: 80%; 
+    overflow-y: auto; 
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; 
+    }
+
+    .donation-box {
+        padding: 15px;
+    }
+
+    .donation-image, .input-box {
+        font-size: 4vw;
+        padding: 10px;
+    }
+
+    .note {
+        font-size: 3vw;
+    }
+
+    .confirm-button, .cancel-button {
+        font-size: 4vw;
+        padding: 10px;
+    }
+
+    #valor {
+        font-size: 4vw;
+        padding: 12px;
+    }
+
+    .donation-input-box {
+        gap: 15px;
+    }
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+input:disabled {
+    background-color: #f0f0f0;
+    color: #888;
+}
+
+
+.footer {
+    background-color: #FFA114;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8vw;
+    font-weight: 300;
+    margin-top: 25%; 
+}
+
+
+.confirm-button {
+    background: #4379E3;
+    border: 1px solid #1753CA;
+}
+
+.confirm-button:hover {
+    background: #3a66c2; 
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.confirm-button:active {
+    transform: translateY(2px); 
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none; 
+}
+
+.popup-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.popup-box h2 {
+    margin: 0 0 15px;
+    font-size: 1.5rem;
+    color: #e74c3c;
+}
+
+.popup-box p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.popup-box .popup-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.popup-box .popup-btn:hover {
+    background-color: #c0392b;
+}
+
+
+.cancel-button {
+    background: #FFA114;
+    border: 2px solid #FF8C00;
+}
+
+.cancel-button:hover {
+    background: #FF8C00;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cancel-button:active {
+    transform: translateY(2px); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}

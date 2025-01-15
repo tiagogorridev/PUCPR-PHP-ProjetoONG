@@ -1,0 +1,265 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+main {
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    margin: 2rem auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    color: #333;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group label {
+    color: #444;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.input-group input {
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #555;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #FFA114;
+    background-color: #fff;
+}
+
+.secondary-action {
+    text-align: right;
+}
+
+.esqueci-senha {
+    color: #764ba2;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.esqueci-senha:hover {
+    color: #667eea;
+    text-decoration: underline;
+}
+
+.action-buttons {
+    margin-top: 2rem;
+}
+
+.action-button {
+    width: 100%;
+    padding: 1rem;
+    background: #FFA114;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.action-button:hover {
+    background: #667eea;
+    transform: translateY(-2px);
+}
+
+.div-cadastrar {
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 2rem;
+}
+
+.div-cadastrar p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.opcoes-cadastro {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.opcoes-cadastro a {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #FFA114;
+    border-radius: 8px;
+    color: #FFA114;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.opcoes-cadastro a:hover {
+    background: #e68c06;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.success-message {
+    background-color: #e6f4ea;
+    color: #1e7e34;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.success-message::before {
+    content: '✓';
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.message-container {
+    position: fixed; 
+
+
+    z-index: 1000; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.success-message,
+.error-message {
+    animation: fadeIn 0.5s ease-in-out;
+    width: 50%; 
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1%;
+}
+
+.error-message {
+    background-color: #ffeaea;
+    color: #dc3545;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.error-message::before {
+    content: '✕';
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 2rem;
+        margin: 1rem;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .input-group input {
+        font-size: 1.1rem;
+    }
+
+    .action-button {
+        font-size: 1rem;
+    }
+
+    .div-cadastrar p {
+        font-size: 1rem;
+    }
+
+    .opcoes-cadastro {
+        flex-direction: column;
+    }
+
+    .opcoes-cadastro a {
+        width: 100%;
+    }
+
+    .esqueci-senha {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .input-group input {
+        font-size: 1.1rem;
+    }
+
+    .action-button {
+        font-size: 0.9rem;
+    }
+
+    .div-cadastrar p {
+        font-size: 0.9rem;
+    }
+
+    .opcoes-cadastro a {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+}

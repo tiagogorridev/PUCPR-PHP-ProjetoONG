@@ -1,0 +1,125 @@
+main {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    margin: 4rem auto; 
+    flex: 1;
+}
+
+.title {
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+
+.password-change form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; 
+}
+
+
+.input-group label {
+    color: #555;
+    font-weight: 500;
+}
+
+.input-group input {
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #FFA114;
+}
+
+
+.success-message {
+    background-color: #e6f4ea;
+    color: #1e7e34;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.success-message::before {
+    content: '✓';
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+
+.error-message {
+    background-color: #ffeaea;
+    color: #dc3545;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.error-message::before {
+    content: '✕';
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.action-buttons {
+    margin: 1.5rem 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.action-button,
+.confirm-button {
+    width: 48%; 
+    padding: 1rem;
+    background: #FFA114;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.action-button:hover,
+.confirm-button:hover {
+    background: #667eea;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 1.5rem;
+        margin: 2rem auto;
+    }
+
+    .action-buttons {
+        flex-direction: column; 
+    }
+
+    .action-button,
+    .confirm-button {
+        width: 100%; 
+    }
+}

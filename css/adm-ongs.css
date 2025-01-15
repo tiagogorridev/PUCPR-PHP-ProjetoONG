@@ -1,0 +1,13 @@
+.btn-excluir {
+    font-size: 16px;
+    background-color: #f44336;
+    color: white;
+    border: 1px solid #f44336;
+    padding: 0.4rem 0.6rem;
+    border-radius: 8px;
+}
+
+.btn-excluir:hover {
+    background-color: #e53935;
+    border-color: #e53935;
+}

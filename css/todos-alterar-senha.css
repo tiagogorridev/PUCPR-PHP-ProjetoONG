@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    margin: 2rem auto;
+    flex: 1;
+}
+
+.title {
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.password-change form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; 
+}
+
+
+.input-group label {
+    color: #555;
+    font-weight: 500;
+}
+
+.input-group input {
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #FFA114;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.action-button {
+    width: 100%;
+    padding: 1rem;
+    background: #FFA114;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.action-button:hover {
+    background: #667eea;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        padding: 1.5rem;
+        margin: 1rem auto;
+    }
+}

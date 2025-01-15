@@ -1,0 +1,108 @@
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #FFA114;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.message-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 3rem;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+
+
+
+.message-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.message-box p {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+.message-box p strong {
+    color: #333;
+    font-weight: bold;
+}
+
+
+.btn-submit {
+    padding: 12px 24px;
+    border: 3px solid #FFA114;
+    border-radius: 2rem;
+    background: #FFA114;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #FF8C00; 
+    transform: scale(1.05); 
+}
+
+
+.btn-submit {
+    position: relative; 
+    z-index: 1; 
+}
+.btn-status {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-status:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .message-box {
+        padding: 15px;
+    }
+
+    .message-box p {
+        font-size: 1rem;
+    }
+}

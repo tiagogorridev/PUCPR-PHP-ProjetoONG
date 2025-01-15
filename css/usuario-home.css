@@ -1,0 +1,259 @@
+main {
+    padding: 2rem 0;
+    justify-content: center;
+}
+
+.banner-intro {
+    margin: 0 1.5rem;
+}
+
+.tittle-banner {
+    font-size: 15vw;
+    color: #FFA114;
+    font-weight: bold;
+
+}
+
+
+.quero-doar {
+    text-align: center;
+    margin: 2rem 1rem;
+}
+
+.img-banner {
+    width: 40vw;
+}
+
+
+.quero-doar {
+    margin-top: 3rem;
+}
+
+.btn-quero-doar-mobile {
+    font-size: 6vw;
+    background-color: #FFA114;
+    padding: 1rem 2rem;
+    border-style: solid;
+    border-radius: 1rem;
+    font-weight: 900;
+    color: #FF8C00;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-quero-doar {
+    display: none;
+    
+}
+
+.banner-cards-ongs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #FF8C00;
+    place-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    margin-top: 10rem;
+    
+
+}
+
+.card-ong {
+    text-align: center;
+    width: 70%;
+    height: 60vh;
+    background-color: #FDF3C0;
+    padding: 1.5rem 1rem;
+    border-radius: 18px;
+    border: 2px solid #FFA114;
+    max-width: 380px;
+    max-height: 340px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;  
+}
+
+.img-ong {
+    width: 90%;
+    height: 80%;
+    margin-bottom: 2.5rem;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+.btn-conhecer {
+    font-size: 1.5rem;
+    color: #F8E2A1;
+    background-color: #FFA114;
+    padding: 0.8rem 1.6rem;
+    border-style: solid;
+    border-radius: 18px;
+    margin-top: 5rem;
+    max-width: 185px;
+    max-height: 60px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+
+}
+
+
+
+
+.banner-cards-clientes {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.card-doador {
+    background-color: white; 
+    width: 90%;  
+    max-width: 300px; 
+    height: 250px; 
+    border: 2px solid #FFA114;
+    border-radius: 15px; 
+    text-align: center;
+    padding: 1.5rem; 
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-doador p {
+    font-size: 1.1rem; 
+    color: #333;  
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.4; 
+    margin: 0; 
+    flex-grow: 1;
+}
+
+.card-doador .nome-autor {
+    font-weight: bold; 
+    margin-top: 1.5rem; 
+    font-size: 1.2rem;
+    color: #333; 
+}
+
+.card-doador:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+}
+
+.card-doador img {
+    max-width: 80%; 
+    max-height: 50%; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    margin-bottom: 1rem; 
+}
+
+
+
+
+.btn-quero-doar:hover {
+    background-color: #FF8C00;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-ong:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-conhecer:hover {
+    background-color: #FF8C00;
+}
+
+.card-doador:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+@media(min-width:768px) {
+    .banner-cards-ongs {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0;
+    }
+
+    .banner-cards-ongs>.card-ong:nth-child(3) {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+    .card-doador {
+        max-width: 300px;
+        max-height: 160px;
+    }
+
+    .banner-cards-clientes {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+
+
+@media (min-width:1010px) {
+    .banner-intro {
+        padding: 0 4rem;
+    }
+
+    .btn-quero-doar-mobile {
+        display: none;
+    }
+
+    .btn-quero-doar {
+        display: inline;
+        font-size: 3.5vw;
+        background-color: #FFA114;
+        padding: 2rem 2rem;
+        border-style: solid;
+        border-radius: 1rem;
+        font-weight: 900;
+        color: #FFD864;
+        margin-left: 4rem;
+        text-align: center;
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .a {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .first-line-banner {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+@media (min-width:1200px) {
+    .banner-cards-ongs {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 0;
+    }
+
+    .card-ong {
+        max-width: 500px;
+        max-height: 400px;
+    }
+
+    .banner-cards-ongs>.card-ong:nth-child(3) {
+        grid-column: auto;
+        justify-self: center;
+    }
+}
